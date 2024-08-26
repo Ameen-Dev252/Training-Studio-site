@@ -1,0 +1,783 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+img{
+    height: 100%;
+}
+header{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15) !important;
+    height: 4.5rem;
+    position: sticky;
+    top: 0;
+    padding: 10px;
+
+}
+
+.hamburger{
+    display: none;
+}
+.Mobile-menu{
+    display: none;
+}
+.container {
+    width: min(90%, 1120px);
+    margin-inline: auto;
+}
+
+.logo{
+    font-size: 30px;
+    margin-top: 4px;
+    font-weight: 700;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.color{
+    color: red;
+}
+.color1{
+    color: #080808;
+}
+.desktop-menu{
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+.desktop-menu ul{
+    display: flex;
+    list-style: none;
+    margin-top: 10px;
+    font-family: 'Times New Roman', Times, serif;  font-weight: 500;
+    font-size: 13px;
+    color: #7a7a7a;
+    text-transform: uppercase;
+
+   
+}
+.desktop-menu li a{
+    text-decoration: none;
+    padding: 20px;
+    color: rgb(19, 18, 18);
+    font-size: 20px;
+}
+.desktop-menu li a:hover{
+    color: red;
+    cursor: pointer;
+}
+.btn{
+    display: inline-block;
+    font-size: 13px;
+    padding: 11px 17px;
+    background-color: #ed563b;
+    color: #fff;
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+    transition: all .3s;
+    height: auto;
+    line-height: 20px;
+    border: none;
+    cursor: pointer;
+   
+}
+.background-clip{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background-color: rgba(0,0,0,0.4);
+}
+.hero-Content{
+    gap: 10px;
+}
+.hero{
+    height: calc(100vh -  4.5rem); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+   
+}
+
+.hero h6{
+    margin-top: 0px;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 800;
+    color: #fff;
+    letter-spacing: 0.5px;}
+
+.hero h2{
+    font-size: 84px;
+    text-transform: uppercase;
+    font-weight: 800;
+    color: #fff;
+    letter-spacing: 1px;
+}
+.color2{
+    color: red;
+    font-size: 84px;
+    font-weight: bolder;
+}
+.hero-btn{
+    background-color: red;
+    height: 100%;
+    padding: 20px 35px;
+    color: #fff;
+    border: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.25rem;
+    cursor: pointer;
+    
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 140px;
+    margin-bottom: 80px;
+}
+
+.content img{
+    width: 45px;
+    height: 15px;
+    margin: 20px 0;
+}
+.content h2 {
+    text-transform: uppercase;
+    font: size 1.875rem;;
+}
+.content p {
+    
+        font-size: 14px;
+        line-height: 25px;
+        color: #7a7a7a;
+}
+.content .Program{
+    color: #fe7f42;
+}
+
+.program-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 55px;
+}
+.program1{
+    display: flex;
+}
+.programs{
+    display: flex;
+    gap: 20px;
+}
+.program img{
+    float: left;
+    margin-right: 30px;
+}
+
+
+.info h4{
+    margin-top: 0px;
+    margin-bottom: 7px;
+    letter-spacing: 0.25px;
+    color: #232d39;
+    font-size: 19px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.info p {
+    font-size: 14px;
+    line-height: 25px;
+    color: #7a7a7a;
+    font-weight: 300;
+}
+.info a {
+    margin-top: 7px;
+    display: inline-block;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #ed563b;
+    font-weight: 500;
+    text-decoration: none;
+}
+.hero1{
+    background: url("https://templatemo.com/templates/templatemo_548_training_studio/assets/images/cta-bg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 355.188px;
+    width: 100%;
+    margin-top: 6.5rem;
+    display: flex;
+    align-items: center;
+}
+.think,.today{
+    color: #fe7f42;
+}
+.banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+ 
+}
+.banner h2{
+    font-size: 36px;
+    text-transform: uppercase;
+    font-weight: 800;
+    color: #f4f4f4;
+    letter-spacing: 1px;
+    margin-top: 4rem;
+}
+.banner p {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #f1ecec;
+    margin: 15px 0px 25px 0px;
+    line-height: 25px;
+}
+.card-section{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+.cards{
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+    width: fit-content;
+    cursor: pointer;
+}
+.card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    
+}
+
+.card img {
+    width: 40px;
+    height: 40px;
+}
+
+.card h2 {
+    color: #e64a35;
+    font-size: 18px;
+    margin: 0;
+}
+.border{
+    background-color: red;
+    padding: 20px 35px;
+    color: #fff;
+    border: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.25rem;
+    cursor: pointer;
+    border-radius: 7px;
+    display: flex;
+    align-items: flex-start;
+}
+.View{
+    border: none;
+    font-size: 15px;
+    padding: 20px 35px;
+    background-color: #ed563b;
+    color: #fff;
+    text-align: center;
+    font-weight: 400;
+    text-transform: uppercase;
+    transition: all .3s;
+    display: flex;
+    align-items: flex-start;
+    cursor: pointer;
+}
+.card-image{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    max-width: fit-content;
+    width: 100%;
+}
+.card-image p {
+    font-size: 14px;
+    color: #7a7a7a;
+    margin-bottom: 28px;
+}
+.card-image h4{
+    font-size: 23px;
+    font-weight: 700;
+    color: #232d39;
+    letter-spacing: 0.5px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+.card-image img{
+    max-width: 100%;
+    overflow: hidden;
+    border-radius: 5px;
+}
+.schedulle{
+    display: flex;
+    background: url("https://templatemo.com/templates/templatemo_548_training_studio/assets/images/schedule-bg.jpg");
+    padding: 0px 0px 140px 0px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    margin-top: 7rem;
+}
+.schedulle p {
+    color: #fff;
+}
+.Days{
+    margin-top: 30px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    cursor: pointer;
+    padding: 0;
+    text-align: center;
+    list-style: none;
+    text-transform: capitalize;
+    margin-right: 10px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #fff
+}
+
+.Days li:hover{
+    color: #e64a35;
+}
+.Days ul li{
+    list-style: none;
+    display: inline;
+}
+table {
+    width: 100%;
+    height: auto;
+    border-collapse: collapse;
+    color: white;
+    margin-top: 5rem;
+}
+
+th, td {
+    border: 1px solid white;
+    padding: 15px;
+    text-align: center;
+    padding: 50px;
+}
+
+.couches{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 40px;
+}
+.couches img{
+    width: 100%;
+    height: auto;
+}
+.couch{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+}
+.couch span{
+    font-size: 13px;
+    font-weight: 500;
+    color: #ed563b;
+    display: inline-block;
+    margin-top: 25px;
+    margin-bottom: 10p
+}
+.couch p {
+    font-size: 14px;
+    line-height: 25px;
+    color: #7a7a7a;
+}
+.couch h4{
+    font-size: 19px;
+    font-weight: 600;
+    color: #232d39;
+    letter-spacing: 0.5px;
+    margin-bottom: 18px;
+}
+
+.social-media-icons{
+    display: flex;
+    gap: 20px;
+    font-size: 15px;
+    color: #232d39;
+    transition: all .3s;
+    cursor: pointer;
+}
+.form-section{
+    background: url("https://templatemo.com/templates/templatemo_548_training_studio/assets/images/contact-bg.jpg");
+    padding: 80px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.contact-map {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 30px;
+    margin-top: 80px;
+  }
+
+  .map {
+    height: 100%;
+    width: 100%;
+  }
+
+  .form {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+  }
+
+  .form-group {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+  }
+
+  .form-group > div {
+    flex-basis: 100%;
+    gap: 10px;
+  }
+
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  input,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 16px;
+  }
+
+  textarea {
+    height: 150px;
+  }
+
+  button {
+    background-color: #fd070f;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: #e54c50;
+  }
+.owner{
+    color: #e54c50;
+}
+footer p{
+    background-color: #fff;
+    color: #232d39;
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+}
+/* background-clip */
+@media(min-aspect-ratio:16/9){
+    .background-clip{
+        width: 100%;
+        height: auto;
+    }
+}
+@media(max-aspect-ratio:16/9){
+    .background-clip{
+        width: auto;
+        height: 100%;
+    }
+}
+
+  
+
+/* tablet  and mobile responsive */
+
+@media(max-width:768px){
+    .desktop-menu ul,.btn{
+        display: none
+    }
+    .logo{
+        font-size: 20px
+    }
+    
+    header{
+        height: 4.5rem;
+        height: 0%;
+    }
+    .desktop-menu ul li{
+        font-size: 2px;
+    }
+    i {
+        z-index: 11111;
+    }
+    .hamburger{
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        top: 20%;
+        right:3%;
+        color: #040404;
+        font-size: 30px;
+        box-shadow: 10px 15px 14px rgba(10, 10, 10, 0.15);
+    }
+    .Mobile-menu{
+        display: flex;
+        justify-content: center;
+        position: fixed;
+        background-color: #fdfafa;
+        inset: 0 0 0 0;
+        color: white;
+        transform: translateX(0%);
+        transition: transform 350ms ease-in-out;
+        
+    }
+    
+    .Mobile-menu[data-visible="false"] {
+        transform: translateX(100%);
+    }
+
+    .hamburger i[data-visible="true"]{
+        display: block;
+    }
+
+    .hamburger i[data-visible="false"]{
+        display: none;
+    }
+    .Mobile-menu.navigation {
+        margin-top: 5rem;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+    }
+    .Mobile-menu a {
+        list-style: none;
+        text-decoration: none;
+    
+    }
+    .Mobile-menu .navigation .menus-link{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    .menus-link a {
+        color: #000;
+        cursor: pointer;
+        font-size: 20px;
+    }
+    .menus-link a :hover{
+        color: red;
+    }
+    .menus-link{
+        gap: 10px;
+    }
+    .content h2 {
+        font-size: 28px;
+    }
+    .content p{
+        font-size: 14px;
+        width: 360px;
+        height:75px ;
+        font-weight: 300;
+    }
+    .program-grid{
+        grid-template-columns: 1fr;
+    }
+    .info p {
+        font-size: 14px;
+        line-height: 25px;
+        color: #7a7a7a;
+        font-weight: 300;
+    }
+    .banner h2{
+        font-size: 20px;
+        text-transform: uppercase;
+        font-weight: 800;
+        color: #fff;
+        letter-spacing: 1px;
+    }
+    .banner img{
+        width: 100%;
+        height: 100%;
+        margin-bottom: 20px;
+    }
+    .banner p {
+        font-size: 16px;
+        color: #fff;
+        margin: 15px 0px 25px 0px;
+    }
+    .card-section{
+        grid-template-columns: 1fr;
+    }
+    .cards{
+        width: 100%;
+        height: 100%;
+    }
+  .card-image{
+    width: 100%;
+    height: 100%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .View{
+    display: inline-block;
+    font-size: 15px;
+    padding: 12px 20px;
+    background-color: #ed563b;
+    color: #fff;
+    text-align: center;
+    font-weight: 400;
+    text-transform: uppercase;
+    transition: all .3s;
+    margin-bottom: 1rem;
+  }
+  .card-image p {
+    font-size: 14px;
+    color: #7a7a7a;
+    margin-bottom: 28px;
+}
+.content p {
+    font-size: 14px;
+    line-height: 25px;
+    color: #7a7a7a;
+}
+.Days{
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    cursor: pointer;
+    padding: 0;
+    text-align: center;
+    list-style: none;
+    text-transform: capitalize;
+    margin-right: 10px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #fff
+}
+.schedulle p {
+    color: #fff;
+}
+table {
+    width: 100%;
+    font-size: 14px;
+}
+
+th, td {
+    padding: 20px;
+  
+}
+
+th, td {
+    display: table-cell;
+    text-align: center;
+}
+    .couches{
+        grid-template-columns: 1fr;
+    }
+    .couch p {
+        font-size: 14px;
+        line-height: 25px;
+        color: #7a7a7a;
+    }
+    .couch h4{
+        font-size: 19px;
+        font-weight: 600;
+        color: #232d39;
+        letter-spacing: 0.5px;
+        margin-bottom: 18px;
+    }
+    .social-media-icons{
+        margin-top: 1rem;
+    }
+    .contact-map{
+        grid-template-columns: 1fr;
+        margin: 10px;
+        padding: 10px;
+        gap: 40px;
+    }
+    .map {
+        height: 300px;
+      }
+
+   
+      .form-section {
+        width: 100%;
+        padding: 0px;
+        margin: 0;
+        border: none;
+        
+      }
+      .form-group {
+        flex-direction: column;
+        margin-top: 40x;
+      }
+      .form-group > div {
+        width: 100%;
+      }
+
+   
+   }
+    
+    footer p{
+        background-color: #fff;
+        color: #232d39;
+        font-size: 25px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 20px;
+    }
